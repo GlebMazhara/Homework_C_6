@@ -1,12 +1,13 @@
 ﻿Console.Clear();
-Console.Write("Введите числа");
-int[] array =Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+Console.Write("Введите количество чисел: ");
+int n = Convert.ToInt32(Console.ReadLine());
 int count = 0;
-for(int i=0; i<array.Length; i++)
+for(int i=0; i<n; i++)
 {
-    if(array[i]<0)
+    int a = Convert.ToInt32(Console.ReadLine());
+    if(a>0)
     {
         count++;
     }
 }
-Console.WriteLine($"Колличество элементов меньше нуля: {count}");
+Console.WriteLine($"Колличество элементов больше нуля: {count}");
